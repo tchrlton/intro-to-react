@@ -13,10 +13,17 @@
 
     <script type="text/babel">
       class Bio extends React.Component {
+        constructor(props){
+          super(props);
+          this.state = {
+            codingExperienceInYears: 0.1
+          }
+        }
         render() {
           return (
             <div>
               <p>My name is Thomas and I am learning React!</p>
+              <h3>Years experience: {this.state.codingExperienceInYears}</h3>
             </div>
           );
         }
